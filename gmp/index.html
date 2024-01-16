@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .svg-container {
+            width: 700px;
+            height: 500px;
+            resize: both;
+            overflow: auto;
+            border: 1px dashed #aaa;
+            }
+
+            svg {
+            width: 100%;
+            height: 100%;
+            }
+
+        .bangla-text {
+            font-size: 12px;
+        }
+
+        .base-point{
+           fill: rgb(200, 0, 255);
+        }
+
+    </style>
+
+    
+</head>
+<body>
+
+<div class="svg-container">
+    <svg viewBox="0 0 700 500" id="svg-container">
+       
+    </svg>
+</div>
+
+
+
+
+<script src="gmp.min.js"></script>
+
+<script>
+    var child = [
+                {x:0  , y: 2.9 },  
+                {x:1  , y: 3 },
+                {x:2 , y: 3.1},
+                {x:3  , y: 3.2 },
+                {x:4  , y: 3.5 },
+                {x:5  , y: 3.8},
+                {x:6  , y: 4},
+                {x:7  , y: 4.3},
+                {x:8  , y: 4.5},
+                {x:9  , y: 5},
+                {x:10  , y: 5.1},
+                {x:11  , y: 5.5},
+                {x:12  , y: 6},
+                {x:13  , y: 6.1},
+                {x:14  , y: 6.3},
+                {x:15  , y: 6.5},
+                {x:16  , y: 6.7},
+                {x:17  , y: 7},
+                {x:18  , y: 7.2},
+                {x:19  , y: 7.4}
+            ];
+   
+
+gmp = new GMPChart("svg-container");
+
+gmp.draw_chart(child);
+</script>
+
+</body>
+</html> 
